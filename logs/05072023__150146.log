@@ -1,0 +1,5 @@
+[ 2023-05-07 15:01:49,485 ] 21 root - INFO - Importing collection data as pandas dataframe
+[ 2023-05-07 15:01:49,485 ] 12 root - INFO - reading from aps2 database and sensor2 collection
+[ 2023-05-07 15:01:49,490 ] 15 root - INFO - found RangeIndex(start=0, stop=0, step=1) columns
+[ 2023-05-07 15:01:49,491 ] 21 root - INFO - (0, 0) is the number of rows and columns in df
+[ 2023-05-07 15:01:49,491 ] 25 root - INFO - replacing na values to np.NaN
