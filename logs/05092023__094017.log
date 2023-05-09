@@ -1,0 +1,14 @@
+[ 2023-05-09 09:40:18,484 ] 22 root - INFO - Importing collection data as pandas dataframe
+[ 2023-05-09 09:40:18,484 ] 12 root - INFO - reading from aps2 database and sensor2 collection
+[ 2023-05-09 09:40:21,958 ] 15 root - INFO - found Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172) columns
+[ 2023-05-09 09:40:21,959 ] 18 root - INFO - dropping id column
+[ 2023-05-09 09:40:22,162 ] 21 root - INFO - (36188, 171) is the number of rows and columns in df
+[ 2023-05-09 09:40:22,163 ] 26 root - INFO - replacing na values to np.NaN
+[ 2023-05-09 09:40:23,679 ] 29 root - INFO - creating feature store dir
+[ 2023-05-09 09:40:23,680 ] 33 root - INFO - storing df in feature store dir
+[ 2023-05-09 09:40:25,531 ] 36 root - INFO - splitting df to train and test

@@ -6,6 +6,7 @@ from sensor.entity import artifact_entity
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
+import os,sys
 
 
 class DataIngestion:
@@ -23,7 +24,7 @@ class DataIngestion:
                                                                 col_name = self.data_ingestion_config.col_name)
             
             logging.info(f"replacing na values to np.NaN")
-            df.replace(to_replace = "na", values = np.NaN, inplace = True)
+            df.replace(to_replace = "na", value = np.NAN, inplace = True)
 
             logging.info(f"creating feature store dir")
             feature_store_dir = os.path.dirname(self.data_ingestion_config.feature_store_filepath)
@@ -33,7 +34,7 @@ class DataIngestion:
             df.to_csv(path_or_buf=self.data_ingestion_config.feature_store_filepath, header = True, index=False)
 
             logging.info(f"splitting df to train and test")
-            train_df, test_df = train_test_split(df,self.data_ingestion_config.test_size)
+            train_df, test_df = train_test_split(df,test_size = self.data_ingestion_config.test_size)
 
             logging.info(f"creating dataset dir")
             dataset_dir = os.path.dirname(self.data_ingestion_config.train_filepath)

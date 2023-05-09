@@ -1,0 +1,11 @@
+[ 2023-05-09 09:38:29,389 ] 22 root - INFO - Importing collection data as pandas dataframe
+[ 2023-05-09 09:38:29,389 ] 12 root - INFO - reading from aps2 database and sensor2 collection
+[ 2023-05-09 09:38:33,073 ] 15 root - INFO - found Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172) columns
+[ 2023-05-09 09:38:33,074 ] 18 root - INFO - dropping id column
+[ 2023-05-09 09:38:33,273 ] 21 root - INFO - (36188, 171) is the number of rows and columns in df
+[ 2023-05-09 09:38:33,274 ] 26 root - INFO - replacing na values to np.NaN
